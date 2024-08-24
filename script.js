@@ -1,4 +1,3 @@
-// Seleccionar.
 const formularioComentarios = document.getElementById('formularioComentarios');
 const nombreUsuario = document.getElementById('nombreUsuario');
 const textoComentario = document.getElementById('textoComentario');
@@ -7,6 +6,8 @@ const contador = document.getElementById('contador');
 
 // Función para agregar un nuevo comentario a la lista.
 function agregarComentario(evento) {
+    evento.preventDefault(); // Evita erecargar la web cuando se preciona enter. 
+
     const nombre = nombreUsuario.value.trim();
     const comentario = textoComentario.value.trim();
 
