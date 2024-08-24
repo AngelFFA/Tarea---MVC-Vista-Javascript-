@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin: 5px 0;
+}
+
+input, textarea {
+    width: calc(100% - 22px); 
+    padding: 10px;
+    box-sizing: border-box; 
+    margin-bottom: 10px;
+}
+
+textarea {
+    resize: vertical; 
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff; 
+    color: #ffffff; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px; 
+}
+
+button:hover {
+    background-color: #0056b3; 
+}
+
+#listaComentarios {
+    max-width: 100%; 
+}
+
+.comentario {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    position: relative;
+    background-color: #f9f9f9;
+}
+
+.comentario button {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    background-color: #ff0000; 
+    color: #ffffff; 
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.comentario button:hover {
+    background-color: #cc0000; 
+}
+
+#contador {
+    margin-bottom: 10px;
+}

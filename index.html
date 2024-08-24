@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de comentarios</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Formulario de comentarios</h1>
+    <form id="formularioComentarios">
+        <label for="nombreUsuario">Nombre:</label>
+        <input type="text" id="nombreUsuario" required>
+
+        <label for="textoComentario">Comentario:</label>
+        <textarea id="textoComentario" rows="4" maxlength="200" required></textarea>
+        <div id="contador">200 caracteres restantes</div>
+
+        <button type="submit">Agregar comentario</button>
+    </form>
+
+    <div id="listaComentarios"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
